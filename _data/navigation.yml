@@ -1,12 +1,17 @@
 # main links
 main:
-  - title: "Quick-Start Guide"
-    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
-  # - title: "About"
-  #   url: https://mmistakes.github.io/minimal-mistakes/about/
-  # - title: "Sample Posts"
-  #   url: /year-archive/
-  # - title: "Sample Collections"
-  #   url: /collection-archive/
-  # - title: "Sitemap"
-  #   url: /sitemap/
+
+# sidebar navigation
+sidebar-menu:
+  - title: "Study"
+    children:
+      - title: "Kafka"
+        url: /categories/kafka/
+      - title: "Linux"
+        url: /categories/linux/
+  - title: "Daily"
+    children:
+      - title: "Retrospect"
+        url: /categories/retrospect/
+      - title: "Goal"
+        url: /categories/goal/

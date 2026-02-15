@@ -12,7 +12,7 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "air" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "ko-KR"
@@ -20,8 +20,8 @@ rtl                      : # true, false (default) # turns direction of the page
 title                    : "Study Record"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "p.jaeeun"
-description              : "공부 기록 블로그"
+name                     : "jaeeun"
+description              : "공부&일상 기록 블로그"
 url                      : "https://jaeun94.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "jaeun94/jaeun94.github.io"
@@ -113,11 +113,11 @@ analytics:
 
 # Site Author
 author:
-  name             : "p.jaeeun"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "공부 기록"
+  name             : "jaeeun"
+  avatar           : "/assets/img/avatar-icon.png"
+  bio              : "공부&일상 기록"
   location         :
-  email            : "p.jaeun94@gmail.com"
+  email            :
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
@@ -293,7 +293,18 @@ defaults:
     values:
       layout: single
       author_profile: true
-      read_time: true
+      read_time: false
       comments: # true
-      share: true
+      share: false
       related: true
+      sidebar:
+        nav: "sidebar-menu"
+  # _pages
+  - scope:
+      path: "_pages"
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+      sidebar:
+        nav: "sidebar-menu"
